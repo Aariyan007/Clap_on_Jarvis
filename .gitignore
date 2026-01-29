@@ -1,1 +1,9 @@
 venv/
+cat >> .gitignore << EOF
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+EOF
+git add .gitignore
+git commit --amend --no-edit
